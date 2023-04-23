@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blog-fotos",
+      "handler": "blog-fotos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blog-fotos/count",
+      "handler": "blog-fotos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blog-fotos/:id",
+      "handler": "blog-fotos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blog-fotos",
+      "handler": "blog-fotos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blog-fotos/:id",
+      "handler": "blog-fotos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blog-fotos/:id",
+      "handler": "blog-fotos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

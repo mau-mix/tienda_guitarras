@@ -1,0 +1,2 @@
+strapi /   Desktop/guitarla_strapi>npm run develop
+next   / Desktop/gutarra_next/npm run dev

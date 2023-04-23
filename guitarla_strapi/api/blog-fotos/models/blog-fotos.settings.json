@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_fotos",
+  "info": {
+    "name": "musica",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "resumen": {
+      "type": "string",
+      "required": true
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "contenido": {
+      "type": "richtext",
+      "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo"
+    }
+  }
+}
